@@ -1,0 +1,10 @@
+---
+
+# File for task "Install Elasticsearch"
+#
+
+- name: Install Elasticsearch
+  become: true
+  yum:
+    name: "/tmp/elasticsearch-{{ elk_stack_version }}-x86_64.rpm"
+    state: present
