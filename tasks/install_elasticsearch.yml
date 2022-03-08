@@ -8,3 +8,4 @@
   yum:
     name: "/tmp/elasticsearch-{{ elk_stack_version }}-x86_64.rpm"
     state: present
+  notify: restart Elasticsearch
